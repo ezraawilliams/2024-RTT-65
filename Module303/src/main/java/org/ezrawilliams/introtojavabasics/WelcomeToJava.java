@@ -15,6 +15,8 @@ curly braces
  */
 
 public class WelcomeToJava {
+
+
     /*
     The main method is the entry point into our application
     Public - accessible to any outside classes
@@ -33,3 +35,4 @@ public class WelcomeToJava {
         System.out.println("We will still write the whole thing from scratch");
     }
 }
+
