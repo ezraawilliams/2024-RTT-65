@@ -18,6 +18,5 @@ public class ContinueExample {
             sum += number;
         }
         System.out.println("The sum is " + sum);
-
     }
 }
