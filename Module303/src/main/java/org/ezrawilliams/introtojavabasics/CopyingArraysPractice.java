@@ -48,6 +48,10 @@ public class CopyingArraysPractice {
         System.arraycopy(sourceArray, 2, targetArray2, 1, 1);
         System.out.println(Arrays.toString(targetArray2));
 
+        //Arrays copyOf method:
+        int[] targetArray3 = Arrays.copyOf(targetArray2,3);
+        System.out.println(Arrays.toString(targetArray3));
+
 
 
 
