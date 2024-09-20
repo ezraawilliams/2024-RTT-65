@@ -9,7 +9,11 @@ public class StudentDemo {
         s3=new Student("Takeisha","LR","White");
         //Norstar:
         s1.setFirstName("Norstar");
+        s1.setMiddleName("NMN");
+        s1.setAge(20);
         System.out.println(s1.getFirstName());
+        System.out.println(s1.getMiddleName());
+        System.out.println(s1.getAge());
 
     }
 }
