@@ -50,7 +50,7 @@ public class ReviewSeptember19 {
             /*
             How do we also check to make sure the second number is valid:
              */
-            if (firstNumber >= 1 && firstNumber <= 100){//within range
+            if (firstNumber >= 1 && firstNumber <= 100 ){//within range
                 //They are correct -the number is valid
                 System.out.println("the first number is valid "   + firstNumber);
                // break;
@@ -71,7 +71,6 @@ public class ReviewSeptember19 {
                 System.out.print("Enter your number again: Range - 1 - 100 ");
                 secondNumber=input.nextInt();
             }//end of else
-            break;
         }//end of while
     }//end of main
 }//end of ReviewSeptember19 class
