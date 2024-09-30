@@ -152,4 +152,18 @@ public class Student {
     public String getContactPerson() {
         return contactPerson;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "address='" + address + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", socialSecurityNumber=" + socialSecurityNumber +
+                ", grade=" + grade +
+                ", contactPerson='" + contactPerson + '\'' +
+                '}';
+    }
 }
