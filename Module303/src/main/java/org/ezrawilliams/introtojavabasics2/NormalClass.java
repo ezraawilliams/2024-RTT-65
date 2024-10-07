@@ -8,7 +8,7 @@ public class NormalClass {
     When we need to create simple, one method classes quickly that usually
     do just ONE thing we can create a functional interface
     and then create an anonymous inner class using an anonymous constructor
-     */
+
     Human hObjOne = new Human() {
         @Override
         public void say() {
@@ -34,5 +34,5 @@ public class NormalClass {
 
         //How would I call the communication method?
         Human.communication();
-    }
+    }*/
 }

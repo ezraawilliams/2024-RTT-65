@@ -1,7 +1,7 @@
 package org.ezrawilliams.introtojavabasics2;
 @FunctionalInterface
 public interface Human {
-    void say();//a single abstract method
+    String say(String message);//a single abstract method
 /*
 We can have in our functional interface any number of default
 methods or static methods because the default methods are not abstract
