@@ -8,8 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 public class UserTest {
     static User user1;
@@ -39,7 +38,19 @@ public class UserTest {
 
     //Positive test:
     @Test
-    public void testUserExists(){
+    public void testUsersSame(){
         assertEquals(userDao.findByUserId(user5.getUserId()), user5);
+    }
+
+    //Negative test:
+    @Test
+    public void testUserNotTheSame(){
+        assertNotSame(userDao.findByUserId(user5.getUserId()), user4);
+    }
+
+    //Positive test:
+    @Test
+    public void testFindUsersByZipcode(){
+        assertEquals(users,userDao.findUsersByZipcode(user2.getZipcode()));
     }
 }
