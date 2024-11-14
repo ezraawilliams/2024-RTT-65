@@ -34,11 +34,53 @@ for (let i = 0; i <= 5; i++) {
 
 for (let i = 5; i >= 0; i--) {
   console.log(i + " ")
-}*/
+}
 
 for (let i = 0; i != 9; i += 2) {
   console.log(i + " ")
 }
+
+let number = 4;
+do {
+  console.log("Printing");
+  number++;
+} while (number < 10);
+
+let number = 1;
+do {
+  let value = number * 2;
+  number++;
+  console.log(value);
+} while (number <= 5);*/
+
+let userInput = "";
+userInput = prompt("Enter an Arithmetic Expression");
+console.log(userInput);
+
+let operators = "";
+let numbers = "";
+const SEPARATOR = ", ";
+
+for (let i = 0; i < userInput.length; i++) {
+  let c = userInput[i]; // the current character
+  if (c >= '0' && c <= '9') {
+    while (i < userInput.length && c >= '0' && c <= '9') {
+      c = userInput[i];
+      numbers += c;
+      i++;
+    }
+    numbers += SEPARATOR;
+    i--;
+    //How do we make this work even when the user does not enter spaces
+  } else if (c === ' ') { //This one...
+  } else {
+    operators += c + SEPARATOR;
+  }
+}
+
+console.log("Numbers: ", numbers);
+console.log("Operators: ", operators);
+
 
 
 
